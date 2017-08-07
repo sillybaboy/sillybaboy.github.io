@@ -23,25 +23,32 @@ html,body { margin:0; padding: 0; }
 .b_footer {
   padding: 10px;
   height: 50px;
-  background-color: white;
+  background-color: #17141f;
   text-align: center;
-  color: red;
+  color: white;  
   font-weight: bold;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
+a         { color: orange }
+a:link    { color: orange }    
+a:visited { color: orange }  
+a:hover   { color: red } 
+a:active  { color: green }
 </style>
 </head>
 
 
 <body>
 <div id="main_block">
-  <iframe id="left_frame" src="https://www.youtube.com/embed/live_stream?channel=UCXTPpcBRKO3tlRi70AQXkCA">
+  <iframe id="left_frame" 
+          src="https://www.youtube.com/embed/live_stream?channel=UCXTPpcBRKO3tlRi70AQXkCA" 
+		  frameBorder="0">
   </iframe>
   
   <iframe id="right_frame" 
           frameborder="0" 
           scrolling="yes" 
-          src="https://www.twitch.tv/artofficialentertainment/chat" 
+          src="https://www.twitch.tv/artofficialentertainment/chat?darkpopout" 
           height="500" 
           width="350">
   </iframe>
@@ -49,9 +56,6 @@ html,body { margin:0; padding: 0; }
 
 <div class="b_footer">
   *** Vist the stream source on Twitch: <a href="http://www.twitch.tv/artofficialentertainment" target="_blank">Art-Official Entertainment</a> *** <a href="https://www.youtube.com/user/ArtTheGenius" target="_blank">YT Channel</a> *** <a href="https://streamjar.tv/tip/Art-Official" target="_blank">Donation Link</a> ***
-
 </div>
-
 </body>
 </html>
-
