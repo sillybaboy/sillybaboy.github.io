@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LardOfTheWings</title>
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+<style>
+html,body { margin:0; padding: 0; }
+#main_block {
+  display: block; /* Useless, divs are display:block */
+  width: 100%;    /* Useless, display:block elements are width:100% by default */
+  height: 100%;   /* Fairly useless now, should take children's height */
+  font-size:0;    /* Force space between inline-block elements to be 0 */
+}
+#ytchat_frame {
+  width: 300px;
+}
+#left_frame {
+  width: calc(100% - 655px);
+}
+#right_frame {
+  width: 355px;
+}
+
+#ytchat_frame,#left_frame,#right_frame {
+  display: inline-block;
+  box-sizing: border-box;
+  height: calc(100vh - 50px);
+}
+.b_footer {
+  padding: 10px;
+  height: 50px;
+  background-color: #17141f;
+  text-align: center;
+  color: white;  
+  font-weight: bold;
+  box-sizing: border-box;  
+}
+a         { color: orange }
+a:link    { color: orange }    
+a:visited { color: orange }  
+a:hover   { color: red } 
+a:active  { color: green }
+</style>
+</head>
+
+
+<body>
+<div id="main_block">
+<iframe id="ytchat_frame"
+        src="https://www.youtube.com/live_chat?v=mCysZrZKX5o&embed_domain=sillybaboy.github.io"
+        frameborder="0">
+</iframe>
+
+<iframe id="left_frame" 
+          src="https://www.youtube.com/embed/live_stream?channel=UCXTPpcBRKO3tlRi70AQXkCA&autoplay=1" 
+		  frameBorder="0"
+		  allowfullscreen>
+  </iframe>
+  
+  <iframe id="right_frame" 
+          frameborder="0" 
+          scrolling="yes" 
+          src="http://www.twitch.tv/embed/wingsofredemption/chat?darkpopout" 
+          height="500" 
+          width="350">
+  </iframe>
+</div>
+
+<div class="b_footer">
+  LardOfTheWings
+</div>
+</body>
+</html>
