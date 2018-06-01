@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wavy Illuminati chat</title>
+<link rel="icon" href="wavy.png" type="image/gif" sizes="16x16">
+<style>
+html,body { margin:0; padding: 0; }
+#main_block {
+  display: block; /* Useless, divs are display:block */
+  width: 100%;    /* Useless, display:block elements are width:100% by default */
+  height: 100%;   /* Fairly useless now, should take children's height */
+  font-size:0;    /* Force space between inline-block elements to be 0 */
+}
+#twitch_frame {
+  width: calc(100% - 660px);
+}
+#left_frame {
+  width: 330px;
+}
+#right_frame {
+  width: 330px;  
+}
+#twitch_frame,#left_frame,#right_frame {
+  display: inline-block;
+  box-sizing: border-box;
+  height: calc(100vh - 50px);
+}
+.b_footer {
+  padding: 10px;
+  height: 50px;
+  background-color: #17141f;
+  text-align: center;
+  color: white;  
+  font-weight: bold;
+  box-sizing: border-box;  
+}
+/* SC CSS */
+
+/* SC CSS */
+a         { color: orange }
+a:link    { color: orange }    
+a:visited { color: orange }  
+a:hover   { color: red } 
+a:active  { color: green }
+</style>
+</head>
+
+
+<body>
+  <div id="main_block">
+    <iframe id="twitch_frame"            
+      src="https://player.twitch.tv/?channel=WavyBabyGaming"         
+      frameborder="0" 
+      scrolling="no"
+      allowfullscreen="true">  
+    </iframe>
+    <iframe id="left_frame" 
+      frameborder="0" 
+      scrolling="yes" 
+      src="https://www.twitch.tv/embed/wavybabygaming/chat?darkpopout" 
+      height="500" 
+      width="330">
+    </iframe>
+    <iframe id="right_frame"      
+      variant="dark"
+      frameborder="0" 
+      scrolling="yes" 
+      src="https://www.smashcast.tv/embed/chat/wavybabygaming?autoconnect=true" 
+      height="500" 
+      width="330">
+    </iframe>
+    </div>
+<div class="b_footer">
+*** Illuminati chat ***  <a href="http://www.twitch.tv/wavybabygaming" target="_blank">Watch WavyBabyGaming on Twitch</a> ***
+</div>
+</body>
+</html>
