@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncle Arty double chat</title>
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+<style>
+html,body { margin:0; padding: 0; }
+#main_block {
+  display: block; /* Useless, divs are display:block */
+  width: 100%;    /* Useless, display:block elements are width:100% by default */
+  height: 100%;   /* Fairly useless now, should take children's height */
+  font-size:0;    /* Force space between inline-block elements to be 0 */
+}
+#yt_frame {
+  width: calc(100% - 660px);
+}
+#left_frame {
+  width: 330px;
+}
+#right_frame {
+  width: 330px;  
+}
+#left_frame,#yt_frame,#right_frame {
+  display: inline-block;
+  box-sizing: border-box;
+  height: calc(100vh - 0px);
+}
+.b_footer {
+  padding: 10px;
+  height: 50px;
+  background-color: #17141f;
+  text-align: center;
+  color: white;  
+  font-weight: bold;
+  box-sizing: border-box;  
+}
+/* SC CSS */
+/* SC CSS */
+a         { color: orange }
+a:link    { color: orange }    
+a:visited { color: orange }  
+a:hover   { color: red } 
+a:active  { color: green }
+</style>
+</head>
+
+
+<body>
+  <div id="main_block">
+    <iframe id="left_frame" 
+      frameborder="0" 
+      scrolling="yes" 
+      src="https://www.twitch.tv/embed/artofficialentertainment/chat?darkpopout" 
+      height="500" 
+      width="330">
+    </iframe>   
+    <iframe id="yt_frame"            
+      src="https://www.youtube.com/embed/live_stream?channel=UC2y7nqmECu8EcJqAOwy0fyg&autoplay=1"         
+      frameborder="0" 
+      scrolling="no"
+      allowfullscreen="true">  
+    </iframe>
+     
+	<iframe id="right_frame"
+	  src="https://gaming.youtube.com/live_chat?v=CBdB4Jw4S9Q&embed_domain=sillybaboy.github.io/"
+	  >
+    </iframe>    
+  </div>
+
+
+
+</body>
+</html>
