@@ -46,7 +46,7 @@ a:active  { color: green }
 
 <script>
 	var xhr = new XMLHttpRequest();
-	var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCEfpYb8dK_bhuphBjWDrRCA&eventType=live&type=video&key=AIzaSyDocfvvOA70tA0ow91dtdMxHjtrA0-5MuU"
+	var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC2y7nqmECu8EcJqAOwy0fyg&eventType=live&type=video&key=AIzaSyDocfvvOA70tA0ow91dtdMxHjtrA0-5MuU"
 	
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == 4 && xhr.status == 200) {
@@ -62,6 +62,7 @@ a:active  { color: green }
 		var output;
 		output = data.items[0].id.videoId;
 		document.getElementById("right_frame").src = "https://gaming.youtube.com/live_chat?v=" + output + "&embed_domain=sillybaboy.github.io";
+		document.getElementById("yt_frame").src = "https://www.youtube.com/embed/" + output + "&embed_domain=sillybaboy.github.io&autoplay=1";
 	}
 </script>
 
@@ -75,7 +76,7 @@ a:active  { color: green }
       width="330">
     </iframe>   
     <iframe id="yt_frame"            
-      src="https://www.youtube.com/embed/live_stream?channel=UC2y7nqmECu8EcJqAOwy0fyg&autoplay=1"         
+      src="links"         
       frameborder="0" 
       scrolling="no"
       allowfullscreen="true">  
@@ -87,7 +88,7 @@ a:active  { color: green }
       scrolling="no">
     </iframe>    
   </div>
-
+<!-- permalink https://www.youtube.com/embed/live_stream?channel=UC2y7nqmECu8EcJqAOwy0fyg&autoplay=1 -->
 
 
 </body>
