@@ -9,25 +9,26 @@ html,body { margin:0; padding: 0; }
   display: block; /* Useless, divs are display:block */
   width: 100%;    /* Useless, display:block elements are width:100% by default */
   height: 100%;   /* Fairly useless now, should take children's height */
-  font-size:0;    /* Force space between inline-block elements to be 0 */
+  font-size:0;    /* Force space between inline-block elements to be 0 */  
 }
 #yt_frame {
-  width: calc(100% - 660px);
+  width: calc(100% - 700px);
 }
 #left_frame {
   width: 330px;
 }
 #right_frame {
-  width: 330px;  
+  width: 370px;  
 }
 #left_frame,#yt_frame,#right_frame {
   display: inline-block;
   box-sizing: border-box;
-  height: calc(100vh - 0px);
+  height: calc(100vh - 40px);
+  background-color: #17141f;
 }
 .b_footer {
   padding: 10px;
-  height: 50px;
+  height: 40px;
   background-color: #17141f;
   text-align: center;
   color: white;  
@@ -87,15 +88,17 @@ a:active  { color: green }
       frameborder="0" 
       scrolling="no"
       allowfullscreen="true"
-      >  
-    </iframe>
-     
+      >
+    </iframe>     
 	<iframe id="right_frame"
 	  src=""
 	  frameborder="0" 
       scrolling="no">
-    </iframe>    
+    </iframe>	
   </div>
+	<div class="b_footer">
+		 *** <a href="https://www.twitch.tv/artofficialentertainment" target="_blank"> Twitch</a> *** <a href="https://www.youtube.com/user/ArtTheGenius" target="_blank"> YouTube </a> *** <a href="https://twitter.com/leunclearty" target="_blank"> Twitter </a> *** <a href="https://www.stream.me/artofficial" target="_blank"> stream.me/artofficial </a> *** TWITCH PMs DO NOT WORK HERE *** No autoplay *** 
+	</div>
 <!-- permalink https://www.youtube.com/embed/live_stream?channel=UC2y7nqmECu8EcJqAOwy0fyg&autoplay=1 -->
 
 
