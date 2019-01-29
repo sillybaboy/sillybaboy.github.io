@@ -13,18 +13,20 @@ html,body { margin:0; padding: 0; }
 }
 #yt_frame {
   width: calc(100% - 700px);
+  background-color: #17141f;
 }
 #left_frame {
   width: 330px;
+  background-color: #17141f;
 }
 #right_frame {
-  width: 370px;  
+  width: 370px;
+  background-color: #1a1a1a;
 }
 #left_frame,#yt_frame,#right_frame {
   display: inline-block;
   box-sizing: border-box;
-  height: calc(100vh - 40px);
-  background-color: #17141f;
+  height: calc(100vh - 40px);  
 }
 .b_footer {
   padding: 10px;
@@ -46,8 +48,7 @@ a:active  { color: green }
 </head>
 
 <script>
-	var xhr = new XMLHttpRequest();
-	//var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC2y7nqmECu8EcJqAOwy0fyg&eventType=live&type=video&key=AIzaSyAvVpcWwUz4jkyWyTzfRte0rIh17B3SvUA"
+	var xhr = new XMLHttpRequest();	
 	var url = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyAvVpcWwUz4jkyWyTzfRte0rIh17B3SvUA&fields=pageInfo(totalResults),items(id(videoId))&part=snippet&channelId=UC2y7nqmECu8EcJqAOwy0fyg&eventType=live&type=video"
 	
 	xhr.onreadystatechange = function() {
