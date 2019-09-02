@@ -65,6 +65,13 @@ a:active  { color: green }
 		var output;
 		var live;
 		live = data.pageInfo.totalResults;
+		var param_id = getUrlParam('id');
+		
+		if (param_id != null) {
+			live = 1;
+			output = param_id;
+		}
+		
 		if (live != 0) {
 			output = data.items[0].id.videoId;
 			document.getElementById("right_frame").src = "https://gaming.youtube.com/live_chat?v=" + output + "&embed_domain=sillybaboy.github.io";
@@ -74,6 +81,23 @@ a:active  { color: green }
 			document.getElementById("yt_frame").src = "notlive.png";
 		}
 	}
+	
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+			});
+		return vars;
+	}
+	
+	function getUrlParam(parameter){
+		var urlparameter = null;
+		if(window.location.href.indexOf(parameter) > -1){
+			urlparameter = getUrlVars()[parameter];
+			}
+		return urlparameter;
+	}
+
 </script>
 
 <body>
@@ -99,7 +123,7 @@ a:active  { color: green }
     </iframe>	
   </div>
 	<div class="b_footer">
-		 *** <a href="https://www.twitch.tv/artofficialentertainment" target="_blank"> Twitch</a> *** <a href="https://www.youtube.com/user/ArtTheGenius" target="_blank"> YouTube </a> *** <a href="https://twitter.com/leunclearty" target="_blank"> Twitter </a> *** <a href="https://www.stream.me/artofficial" target="_blank"> stream.me/artofficial </a> *** <a href="https://streamlabs.com/artofficialentertainment" target="_blank"> DONATION LINK </a> *** TWITCH PMs DO NOT WORK HERE *** No autoplay *** 
+		 *** <a href="https://www.twitch.tv/artofficialentertainment" target="_blank"> Twitch</a> *** <a href="https://www.youtube.com/user/ArtTheGenius" target="_blank"> YouTube </a> *** <a href="https://twitter.com/leunclearty" target="_blank"> Twitter </a> *** <a href="https://streamlabs.com/artofficialentertainment" target="_blank"> DONATION LINK </a> *** TWITCH PMs DO NOT WORK HERE *** No autoplay *** 
 	</div>
 <!-- permalink https://www.youtube.com/embed/live_stream?channel=UC2y7nqmECu8EcJqAOwy0fyg&autoplay=1 -->
 
