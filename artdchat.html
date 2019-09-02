@@ -66,10 +66,12 @@ a:active  { color: green }
 		var live;
 		live = data.pageInfo.totalResults;
 		var param_id = getUrlParam('id');
-		
+		console.log(param_id); 		
+
 		if (param_id != null) {
-			live = 1;
-			output = param_id;
+			output = param_id;			
+			document.getElementById("right_frame").src = "https://gaming.youtube.com/live_chat?v=" + output + "&embed_domain=sillybaboy.github.io";
+			document.getElementById("yt_frame").src = "https://www.youtube.com/embed/" + output;			
 		}
 		
 		if (live != 0) {
