@@ -78,7 +78,7 @@ a:active  { color: green }
 			output = data.items[0].id.videoId;
 			document.getElementById("right_frame").src = "https://gaming.youtube.com/live_chat?v=" + output + "&embed_domain=sillybaboy.github.io";
 			document.getElementById("yt_frame").src = "https://www.youtube.com/embed/" + output;
-		} else {
+		} else if (param_id == null) {
 			document.getElementById("right_frame").src = "";
 			document.getElementById("yt_frame").src = "notlive.png";
 		}
