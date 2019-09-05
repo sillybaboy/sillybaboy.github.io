@@ -60,7 +60,7 @@ a:active  { color: green }
 		
 		if (param_channel != null) {
 			var xhr = new XMLHttpRequest();	
-			var url = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyAvVpcWwUz4jkyWyTzfRte0rIh17B3SvUA&fields=pageInfo(totalResults),items(id(videoId))&part=snippet&channelId=" + param_channel + "&eventType=live&type=video"
+			var url = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyAvVpcWwUz4jkyWyTzfRte0rIh17B3SvUA&fields=pageInfo(totalResults),items(id(videoId))&part=snippet&channelId=" + param_channel + "&eventType=live&type=video";
 			xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 					var jsonData = JSON.parse(xhr.responseText);
